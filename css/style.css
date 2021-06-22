@@ -49,14 +49,38 @@ a{
     list-style-type: square;
 }
 
+#section3 ul{
+    padding: 30px;
+    list-style-type: square;
+}
+#section3 ul li{
+    margin: 10px;
+}
+
 #section2 ul li{
     margin: 10px;
 }
 
 footer{
     text-align: center;
+    padding: 15px;
 }
 
-#section3{
-    text-align: center;
+
+
+
+#section4 ol{
+   padding: 50px;
+   list-style-type: decimal;
+   background-color: #1f1f1f;
+   color: #343A40;
 }
+#section4 ol li{
+    width: 300px;
+    margin: 3px;
+   padding: 10px;
+   background-color: #343A40;
+   color: #E1E8EB;
+ 
+ 
+ }
