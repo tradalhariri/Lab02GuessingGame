@@ -108,6 +108,10 @@ while (i <= 4) {
   }
 }
 
+if(i === 5){
+  alert('you have exhausted all four attempts for gussing my age.');
+}
+
 
 let visitedCities = ['daraa', 'damascus', 'istanbul', 'cairo', 'baghdad', 'homs'];
 let expectedCity;
