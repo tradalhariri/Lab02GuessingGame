@@ -1,19 +1,67 @@
+
+
 body{
-    background-color: #C84B31;
-    color: white;
+    /* background-color: #C84B31; */
+    color: #777;
+    padding: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+
 }
 
-header{
-    position: fixed;
-    top: 0;
- padding: 15px;
- width: 100%;
- background-color: #1f1f1f;
- z-index: 10;
+.header{
+ position: relative;
+ height: 95vh;
+ background-image:linear-gradient(to bottom right,rgba(120, 135, 120, 0.753),rgba(152, 137, 152, 0.753)),url(../p-bk.jpg);
+ clip-path: polygon(0 0,100% 0, 100% 75vh,0 100%);
+ background-size: cover;
+ background-position: top;
  box-shadow: 0px 2px 2px  #E1E8EB;
 }
+.logo-box{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.logo{
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+}
+
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.heading-primary{
+    text-transform: uppercase;
+    color: #fff;
+  
+}
+.heading-primary-main{
+display: block;
+letter-spacing: 36px;
+font-size: 30px;
+font-weight: 400;
+margin-bottom: 60px;
+}
+
+.heading-primary-sub{
+display: block;
+letter-spacing: 60.4px;
+font-weight:700 ;
+font-size: 20px;
+}
+
 footer{
     margin-top: 20px;
+    display: block;
 }
 
 
@@ -113,21 +161,27 @@ footer{
     padding: 15px;
 }
 
+p{
+    animation-name: aa;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    
+}
+#section4{
 
-
+    background-color: rgba(120, 135, 120, 0.753);
+    color: white;
+}
 
 #section4 ol{
    padding: 50px;
    list-style-type: decimal;
-   background-color: #1f1f1f;
-   color: #343A40;
 }
 #section4 ol li{
     width: 300px;
     margin: 3px;
    padding: 10px;
-   background-color: #343A40;
-   color: #E1E8EB;
+
  
  
  }
@@ -136,4 +190,16 @@ footer{
      color: #1f1f1f;
      border: 1px solid #1f1f1f;
      border-width: 2px 0 0 0;
+ }
+
+ @keyframes aa{
+     0%{
+         opacity: 0;
+transform:translate(-10%,0%);
+     }
+
+     100% {
+         opacity: 1;
+        transform:translate(10%,0%);
+     }
  }
